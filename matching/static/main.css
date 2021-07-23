@@ -1,0 +1,18 @@
+/* class名を指定して色を変えたりカスタマイズできる */
+body { 
+    background-image: url(IMG_2879.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+}
+.navbar{
+    background: blue;
+}
+
+h1 a, h2 a {
+    color: #C25100;
+    padding-left: 15px;
+    font-family: 'Lobster';
+}

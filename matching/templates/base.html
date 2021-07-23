@@ -1,0 +1,20 @@
+{% load static %}
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel = "stylesheet" href = "{% static 'main.css' %}">
+    </head>
+    <body>
+        {% include "navbar.html" %}
+        
+        {% block main %}
+        <h1><a>ページがありません</a></h1>
+        {%endblock%}
+        <!-- {% block img %}
+        <img src = "{% static 'IMG_2879.jpg' %}">
+        {%endblock%} -->
+    
+    </body>
+</html>

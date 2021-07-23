@@ -1,0 +1,7 @@
+<!-- ログインHTMLはregistrationフォルダ配下で無いといけない -->
+{% extends 'base.html' %}
+{% block main %}
+<h2>ログイン</h2>
+<!-- formのtemplateを呼び出している。ボタンの部分をログインという文字表示に変えている -->
+{% include "form.html" with submit_label="ログイン" %}
+{% endblock %}

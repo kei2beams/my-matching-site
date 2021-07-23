@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block main %}
+<h1><a>プロフィール</a></h1>
+<h2><a>基本情報</a></h2>
+{{request}}
+<ul>
+    <li>お名前：{{user_name}}</li>
+    <li>年齢：{{age}}</li>
+    <li>住所：{{address}}</li>
+    <li>血液型：{{blood_type}}</li>
+    <li>趣味一覧</li>
+    <ul>
+        {% for hobby in hobbys %}
+        <li>{{hobby}}</li>
+    {% empty %}
+    趣味が登録されていません
+    {% endfor %}
+    </ul>
+</ul>
+{%endblock%}    

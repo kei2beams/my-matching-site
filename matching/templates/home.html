@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+<!-- 標準でnowタグが用意されている。現在日時を好きなフォーマットで出力でいる -->
+{% now 'Y-m-d' %}
+<h1><a>マッチングサイトホーム画面<a></h1>
+<h2><a>{{user_name}}さんようこそ</a></h2>
+<!-- user変数はもともとdjangoが用意している変数 -->
+<!-- <h2>{{user}}さんようこそ</h2> -->
+{%endblock%}
